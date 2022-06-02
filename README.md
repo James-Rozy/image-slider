@@ -1,0 +1,2 @@
+# image-slider
+A simple image slider. Images appear in a small portrait on the page, there are arrows on either side of the portrait so that the user can go back and forth between photos, the different images will be represented as a row of small circles at the foot of the portrait and the portrait will automatically display a new image from the gallery every five seconds. This project will be built using vanilla HTML, CSS, and JS.
