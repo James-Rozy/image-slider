@@ -74,44 +74,76 @@ footer {
 }
 
 /* IMAGE SLIDER */
-.portrait {
-  align-self: center;
-  height: 600px;
-  width: 400px;
-}
-
 .display {
+  align-self: center;
+  height: 800px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: inherit;
-  width: inherit;
-  background-color: var(--slate-400);
+  background-image: url("./images/bartonPond.jpeg");
+  background-size: cover;
+  box-shadow: 0 5px 10px var(--shadow-color);
 }
 
+/* IMAGES */
+.image-gallery {
+  transition: all 0.3s ease;
+}
+
+.image img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.image {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.caption {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--bg-color);
+  background-color: var(--slate-800);
+  box-shadow: 0 5px 10px var(--shadow-color);
+}
+
+/* CONTROLS */
 .slider-ctrl {
+  position: absolute;
+  width: inherit;
+  margin-top: 400px;
   display: flex;
   justify-content: space-between;
-  padding: 0px 1rem;
+  padding: 0px 2rem;
 }
 
 .slider-btn {
   position: relative;
   display: inline-block;
-  border: solid var(--slate-600);
+  border: solid var(--bg-color);
   border-width: 0 0.8rem 0.8rem 0;
   padding: 0.8rem;
   background-color: transparent;
-  box-shadow: 2px 2px 2px var(--shadow-color);
+  box-shadow: 1px 1px 1px var(--bg-color);
 }
 
 .slider-btn:hover {
-  border: solid var(--slate-700);
+  border: solid var(--slate-200);
   border-width: 0 0.8rem 0.8rem 0;
 }
 
 .slider-btn:active {
-  border: solid var(--slate-800);
+  border: solid var(--slate-300);
   border-width: 0 0.8rem 0.8rem 0;
   box-shadow: none;
 }
