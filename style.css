@@ -134,7 +134,6 @@ footer {
   border-width: 0 0.8rem 0.8rem 0;
   padding: 0.8rem;
   background-color: transparent;
-  box-shadow: 1px 1px 1px var(--bg-color);
 }
 
 .slider-btn:hover {
@@ -145,7 +144,6 @@ footer {
 .slider-btn:active {
   border: solid var(--slate-300);
   border-width: 0 0.8rem 0.8rem 0;
-  box-shadow: none;
 }
 
 .left {
